@@ -1,7 +1,12 @@
 {
   "name": "vscode-java-pack",
   "displayName": "vscode-java-pack",
-  "description": "All needed extensions for Java for fullstack application development",
+  "description": "All needed extensions for effective Java application development",
+  "publisher": "matty-r",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/matty-r/vscode-java-pack.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.84.0"
