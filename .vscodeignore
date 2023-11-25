@@ -2,3 +2,7 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+extensions
+extensions.zip
+linux_extensions.zip
+release.sh

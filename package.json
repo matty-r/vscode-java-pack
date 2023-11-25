@@ -15,7 +15,7 @@
     "Extension Packs"
   ],
   "extensionPack": [
-    "DavidAnson.vscode-markdownlint",
+    "davidanson.vscode-markdownlint",
     "eamodio.gitlens",
     "ecmel.vscode-html-css",
     "esbenp.prettier-vscode",
@@ -24,6 +24,7 @@
     "lacroixdavid1.vscode-format-context-menu",
     "ms-vscode-remote.remote-containers",
     "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
     "ms-vscode-remote.remote-wsl",
     "ms-vscode-remote.vscode-remote-extensionpack",
     "ms-vscode.powershell",
@@ -36,6 +37,7 @@
     "timonwong.shellcheck",
     "vscjava.vscode-java-debug",
     "vscjava.vscode-java-dependency",
+    "vscjava.vscode-java-pack",
     "vscjava.vscode-java-test",
     "vscjava.vscode-maven"
   ]

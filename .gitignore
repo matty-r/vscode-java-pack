@@ -2,3 +2,4 @@ node_modules
 *.vsix
 extensions
 extensions.zip
+linux_extensions.zip

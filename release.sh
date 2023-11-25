@@ -12,6 +12,9 @@ PACKAGE_JSON="package.json"
 # Read extension pack names from package.json
 extension_packs=($(jq -r '.extensionPack[]' < "$PACKAGE_JSON"))
 
+# Add "matty-r.vscode-java-pack" to extension_packs array
+extension_packs+=("matty-r.vscode-java-pack")
+
 # Directory where VS Code extensions are installed
 VSCODE_EXTENSIONS_DIR="$HOME/.vscode/extensions"
 
@@ -32,6 +35,6 @@ do
 done
 
 # Create a zip file of the extensions
-zip -r "extensions.zip" "extensions"
+zip -r "linux_extensions.zip" "extensions"
 
 echo "done."
