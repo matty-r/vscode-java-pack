@@ -21,6 +21,8 @@ VSCODE_EXTENSIONS_DIR="$HOME/.vscode/extensions"
 # Destination directory to copy matching extensions
 DESTINATION_DIR="$CURRENT_DIR/extensions"
 
+rm -rf "$DESTINATION_DIR"
+
 mkdir -p "$DESTINATION_DIR"
 
 for pack_name in "${extension_packs[@]}"

@@ -5,4 +5,5 @@ vsc-extension-quickstart.md
 extensions
 extensions.zip
 linux_extensions.zip
+win_extensions.zip
 release.sh
