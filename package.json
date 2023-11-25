@@ -7,7 +7,7 @@
     "type" : "git",
     "url" : "https://github.com/matty-r/vscode-java-pack.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -36,7 +36,6 @@
     "timonwong.shellcheck",
     "vscjava.vscode-java-debug",
     "vscjava.vscode-java-dependency",
-    "vscjava.vscode-java-pack",
     "vscjava.vscode-java-test",
     "vscjava.vscode-maven"
   ]
