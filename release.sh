@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create vsix package
+vsce package
+
 # Current Dir
 CURRENT_DIR=$(pwd)
 
@@ -17,10 +20,8 @@ DESTINATION_DIR="$CURRENT_DIR/extensions"
 
 mkdir -p "$DESTINATION_DIR"
 
-# Loop through each extension pack name
 for pack_name in "${extension_packs[@]}"
 do
-    # Find directories starting with the pack_name and copy if found
     find "$VSCODE_EXTENSIONS_DIR" -maxdepth 1 -type d -iname "${pack_name}*" -exec cp -r {} "$DESTINATION_DIR" \;
     copied_dirs=$(find "$DESTINATION_DIR" -maxdepth 1 -type d -iname "${pack_name}*")
     if [ -n "$copied_dirs" ]; then
@@ -30,7 +31,7 @@ do
     fi
 done
 
-# Create a zip file of the destination directory
-zip -r "$DESTINATION_DIR.zip" "$DESTINATION_DIR"
+# Create a zip file of the extensions
+zip -r "extensions.zip" "extensions"
 
 echo "done."
